@@ -1,0 +1,141 @@
+root@bcedge-dignam:~# journalctl --since "2025-10-23 05:20:00" --until "2025-10-23 05:30:00"
+Oct 23 05:20:00 bcedge-dignam bcedgeapp[546]: sigen: poll 2025-10-23T05:20:00Z
+Oct 23 05:20:00 bcedge-dignam bcedgeapp[546]: mqtt publish:  2025-10-23T05:20:00Z bcedgeapp/bcedge-dignam/sigen
+Oct 23 05:21:00 bcedge-dignam bcedgeapp[546]: sigen: poll 2025-10-23T05:21:00Z
+Oct 23 05:21:00 bcedge-dignam bcedgeapp[546]: mqtt publish:  2025-10-23T05:21:00Z bcedgeapp/bcedge-dignam/sigen
+Oct 23 05:22:00 bcedge-dignam bcedgeapp[546]: sigen: poll 2025-10-23T05:22:00Z
+Oct 23 05:22:00 bcedge-dignam bcedgeapp[546]: mqtt publish:  2025-10-23T05:22:00Z bcedgeapp/bcedge-dignam/sigen
+Oct 23 05:22:26 bcedge-dignam mender-update[324]: record_id=39 severity=info time="2025-Oct-23 05:22:26.849012" name="Global" msg="No update available"
+Oct 23 05:23:00 bcedge-dignam bcedgeapp[546]: sigen: poll 2025-10-23T05:23:00Z
+Oct 23 05:23:00 bcedge-dignam bcedgeapp[546]: mqtt publish:  2025-10-23T05:23:00Z bcedgeapp/bcedge-dignam/sigen
+Oct 23 05:24:00 bcedge-dignam bcedgeapp[546]: sigen: poll 2025-10-23T05:24:00Z
+Oct 23 05:24:00 bcedge-dignam bcedgeapp[546]: mqtt publish:  2025-10-23T05:24:00Z bcedgeapp/bcedge-dignam/sigen
+Oct 23 05:25:00 bcedge-dignam bcedgeapp[546]: sigen: poll 2025-10-23T05:25:00Z
+Oct 23 05:25:00 bcedge-dignam bcedgeapp[546]: mqtt publish:  2025-10-23T05:25:00Z bcedgeapp/bcedge-dignam/sigen
+Oct 23 05:25:26 bcedge-dignam mender-update[324]: record_id=40 severity=info time="2025-Oct-23 05:25:26.555330" name="Global" msg="No update available"
+Oct 23 05:26:00 bcedge-dignam bcedgeapp[546]: sigen: poll 2025-10-23T05:26:00Z
+Oct 23 05:26:00 bcedge-dignam bcedgeapp[546]: mqtt publish:  2025-10-23T05:26:00Z bcedgeapp/bcedge-dignam/sigen
+Oct 23 05:27:00 bcedge-dignam bcedgeapp[546]: sigen: poll 2025-10-23T05:27:00Z
+Oct 23 05:27:00 bcedge-dignam bcedgeapp[546]: mqtt publish:  2025-10-23T05:27:00Z bcedgeapp/bcedge-dignam/sigen
+Oct 23 05:27:02 bcedge-dignam mender-connect[323]: time="2025-10-23T05:27:02Z" level=error msg="messageLoop: error on readMessage: read tcp 127.0.0.1:38962->127.0.0.1:39037: i/o timeout; disconnecting, waiting for reconnect."
+Oct 23 05:27:02 bcedge-dignam mender-auth[322]: record_id=11 severity=error time="2025-Oct-23 05:27:02.776084" name="Global" msg="Error during network socket forwarding: End of file: Could not read from socket"
+Oct 23 05:27:02 bcedge-dignam mender-auth[322]: record_id=12 severity=warning time="2025-Oct-23 05:27:02.776608" name="http_client" url="https://hosted.mender.io/api/devices/v1/deviceconnect/connect" msg="Client destroyed while request is still active!"
+Oct 23 05:27:02 bcedge-dignam mender-auth[322]: record_id=13 severity=error time="2025-Oct-23 05:27:02.777093" name="Global" msg="Error during network socket forwarding: Operation canceled: Could not read from socket"
+Oct 23 05:27:05 bcedge-dignam bcedgeapp[546]: exiting: bcedgeapp: mqttagent: send: sending: mqttsender: publish: timed out (5000000000)
+Oct 23 05:27:05 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:27:05 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:27:10 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 2.
+Oct 23 05:27:10 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:27:10 bcedge-dignam bcedgeapp[865]: starting
+Oct 23 05:27:15 bcedge-dignam bcedgeapp[865]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:27:15 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:27:15 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:27:20 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 3.
+Oct 23 05:27:20 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:27:20 bcedge-dignam bcedgeapp[875]: starting
+Oct 23 05:27:25 bcedge-dignam bcedgeapp[875]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:27:25 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:27:25 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:27:30 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 4.
+Oct 23 05:27:30 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:27:30 bcedge-dignam bcedgeapp[883]: starting
+Oct 23 05:27:35 bcedge-dignam bcedgeapp[883]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:27:35 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:27:35 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:27:40 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 5.
+Oct 23 05:27:40 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:27:40 bcedge-dignam bcedgeapp[891]: starting
+Oct 23 05:27:45 bcedge-dignam bcedgeapp[891]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:27:45 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:27:45 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:27:51 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 6.
+Oct 23 05:27:51 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:27:51 bcedge-dignam bcedgeapp[901]: starting
+Oct 23 05:27:52 bcedge-dignam mender-auth[322]: record_id=14 severity=error time="2025-Oct-23 05:27:52.838267" name="http_forwarder" request="/api/devices/v1/deviceconnect/connect" msg="Error in incoming response: Host not found (non-authoritative), try again later: GET https://hosted.mender.io/api/devices/v1/deviceconnect/connect: "
+Oct 23 05:27:52 bcedge-dignam mender-connect[323]: time="2025-10-23T05:27:52Z" level=error msg="connection manager failed to connect to http://127.0.0.1:39037/api/devices/v1/deviceconnect/connect: unexpected EOF; len(token)=654"
+Oct 23 05:27:52 bcedge-dignam mender-connect[323]: time="2025-10-23T05:27:52Z" level=error msg="eventLoop: error reconnecting: unexpected EOF"
+Oct 23 05:27:56 bcedge-dignam bcedgeapp[901]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:27:56 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:27:56 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:28:01 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 7.
+Oct 23 05:28:01 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:28:01 bcedge-dignam bcedgeapp[909]: starting
+Oct 23 05:28:06 bcedge-dignam bcedgeapp[909]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:28:06 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:28:06 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:28:06 bcedge-dignam mender-connect[323]: time="2025-10-23T05:28:06Z" level=info msg="connectionmanager backoff: retrying in 1m0s"
+Oct 23 05:28:11 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 8.
+Oct 23 05:28:11 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:28:11 bcedge-dignam bcedgeapp[918]: starting
+Oct 23 05:28:16 bcedge-dignam bcedgeapp[918]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:28:16 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:28:16 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:28:21 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 9.
+Oct 23 05:28:21 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:28:21 bcedge-dignam bcedgeapp[926]: starting
+Oct 23 05:28:26 bcedge-dignam bcedgeapp[926]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:28:26 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:28:26 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:28:32 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 10.
+Oct 23 05:28:32 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:28:32 bcedge-dignam bcedgeapp[935]: starting
+Oct 23 05:28:37 bcedge-dignam bcedgeapp[935]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:28:37 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:28:37 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:28:42 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 11.
+Oct 23 05:28:42 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:28:42 bcedge-dignam bcedgeapp[944]: starting
+Oct 23 05:28:47 bcedge-dignam bcedgeapp[944]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:28:47 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:28:47 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:28:52 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 12.
+Oct 23 05:28:52 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:28:52 bcedge-dignam bcedgeapp[952]: starting
+Oct 23 05:28:57 bcedge-dignam bcedgeapp[952]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:28:57 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:28:57 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:29:02 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 13.
+Oct 23 05:29:02 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:29:02 bcedge-dignam bcedgeapp[960]: starting
+Oct 23 05:29:05 bcedge-dignam mender-auth[322]: record_id=15 severity=error time="2025-Oct-23 05:29:05.618853" name="http_forwarder" request="/api/devices/v2/deployments/device/deployments/next" msg="Error in incoming response: Host not found (non-authoritative), try again later: POST https://hosted.mender.io/api/devices/v2/deployments/device/deployments/next: "
+Oct 23 05:29:05 bcedge-dignam mender-update[324]: record_id=41 severity=error time="2025-Oct-23 05:29:05.619749" name="Global" msg="Request to check new deployments failed: POST http://127.0.0.1:39037/api/devices/v2/deployments/device/deployments/next: "
+Oct 23 05:29:05 bcedge-dignam mender-update[324]: record_id=42 severity=error time="2025-Oct-23 05:29:05.619989" name="Global" msg="Error while polling for deployment: Connection reset by peer: POST http://127.0.0.1:39037/api/devices/v2/deployments/device/deployments/next: "
+Oct 23 05:29:05 bcedge-dignam mender-update[324]: record_id=43 severity=info time="2025-Oct-23 05:29:05.620113" name="Global" msg="Retrying deployment polling in 60 seconds"
+Oct 23 05:29:07 bcedge-dignam bcedgeapp[960]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:29:07 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:29:07 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:29:13 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 14.
+Oct 23 05:29:13 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:29:13 bcedge-dignam bcedgeapp[968]: starting
+Oct 23 05:29:18 bcedge-dignam bcedgeapp[968]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:29:18 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:29:18 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:29:23 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 15.
+Oct 23 05:29:23 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:29:23 bcedge-dignam bcedgeapp[976]: starting
+Oct 23 05:29:28 bcedge-dignam bcedgeapp[976]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:29:28 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:29:28 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:29:33 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 16.
+Oct 23 05:29:33 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:29:33 bcedge-dignam bcedgeapp[984]: starting
+Oct 23 05:29:38 bcedge-dignam bcedgeapp[984]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:29:38 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:29:38 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:29:43 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 17.
+Oct 23 05:29:43 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:29:43 bcedge-dignam bcedgeapp[993]: starting
+Oct 23 05:29:46 bcedge-dignam mender-auth[322]: record_id=16 severity=error time="2025-Oct-23 05:29:46.843382" name="http_forwarder" request="/api/devices/v1/deviceconnect/connect" msg="Error in incoming response: Host not found (non-authoritative), try again later: GET https://hosted.mender.io/api/devices/v1/deviceconnect/connect: "
+Oct 23 05:29:46 bcedge-dignam mender-connect[323]: time="2025-10-23T05:29:46Z" level=error msg="connection manager failed to connect to http://127.0.0.1:39037/api/devices/v1/deviceconnect/connect: unexpected EOF; len(token)=654"
+Oct 23 05:29:46 bcedge-dignam mender-connect[323]: time="2025-10-23T05:29:46Z" level=error msg="eventLoop: error reconnecting: unexpected EOF"
+Oct 23 05:29:48 bcedge-dignam bcedgeapp[993]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:29:48 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:29:48 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+Oct 23 05:29:54 bcedge-dignam systemd[1]: bcedgeapp.service: Scheduled restart job, restart counter is at 18.
+Oct 23 05:29:54 bcedge-dignam systemd[1]: Started bcedgeapp.
+Oct 23 05:29:54 bcedge-dignam bcedgeapp[1001]: starting
+Oct 23 05:29:59 bcedge-dignam bcedgeapp[1001]: exiting: mqttsender: connect: timed out (5000000000)
+Oct 23 05:29:59 bcedge-dignam systemd[1]: bcedgeapp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 23 05:29:59 bcedge-dignam systemd[1]: bcedgeapp.service: Failed with result 'exit-code'.
+root@bcedge-dignam:~#
+
