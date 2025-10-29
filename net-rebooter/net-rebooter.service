@@ -1,0 +1,6 @@
+[Unit]
+Description=Check network connectivity check and reboot if needed
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/net-rebooter

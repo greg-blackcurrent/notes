@@ -1,0 +1,11 @@
+[Unit]
+Description=Run net-rebooter service every 5 minutes
+
+[Timer]
+# Wait for 15 minutes after booting so we don't reboot too often if connectivity is lost.
+# We may want to do something fancier here in the future. Perhaps implement backoff.
+OnBootSec=15min
+OnUnitActiveSec=2m
+
+[Install]
+WantedBy=timers.target

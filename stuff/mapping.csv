@@ -1,0 +1,40 @@
+addr,   type, parsing, unit, name, comment, gregs comment
+
+Instantaneous Values
+
+30001, int32, /1000 ,kW, System Active power,Data collected from system to grid sensor at system to grid checkpoint; >0 buy from grid; <0 sell to grid
+30005, int32, /1000 ,kW, Grid sensor Active power,Data collected from grid sensor at grid to system checkpoint; >0 buy from grid; <0 sell to grid
+30035, int32, /1000 ,kW, PV Power,
+30037, int32, /1000 ,kW, ESS Power,Battery <0: discharging >0: charging
+
+31011, uint32, /100,V,Phase A Voltage,When output type is L/N refers to Phase voltage
+31013, uint32, /100,V,Phase B Voltage,
+31015, uint32, /100,V,Phase C Voltage,
+
+31017, int32, /100,A,Phase A Current,When output type is L/N refers to Phase current
+31019, int32, /100,A,Phase B Current,
+31021, int32, /100,A,Phase C Current,
+
+
+v1.5??
+30568, uint64, /100,kWh,ESS accumulated charge energy, Battery,  Dupe?
+30574, uint64, /100,kWh,ESS accumulated discharge energy, Battery, Dupe?
+30014, uint16, /10,%,ESS SOC, Battery
+
+v 2.7
+30236, uint64, , kWh, Total generation of self PV excluding generation of third party inverter
+30244, uint64, /100, kWh, Total charged energy of the ESS
+30248, uint64, /100, kWh, Total discharged energy of the ESS
+30260, uint64, /100, kWh, Total imported energy
+30264, uint64, /100, kWh, Total exported energy
+
+Note :For the new energy-statistics interface (registers 30228~30268), after upgrading the device firmware to support
+this interface, the register values will reset to 0 and start fresh counting without inheriting historical data.
+
+
+Example for reading voltage A from a Shelly device:
+
+./modbus-cli -address=tcp://192.168.68.235:502 -fn-code 4 -register 1020 -quantity 2 -type-parse float32 -read-parse-order CDAB
+
+
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if /bin/ping -c 3 -W 5 amazonaws.com > /dev/null 2>&1; then
+  echo "net-rebooter: ping ok"
+else
+  echo "net-rebooter: ping failed. rebooting."
+  /bin/systemctl reboot --message="net-rebooter: network failure detected, rebooting."
+fi
