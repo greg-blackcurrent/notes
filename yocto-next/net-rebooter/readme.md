@@ -1,8 +1,8 @@
 
 
 /usr/local/bin/net-rebooter
-/etc/systemd/system/net-rebooter.service
-/etc/systemd/system/net-rebooter.timer
+/usr/lib/systemd/system/net-rebooter.service
+/usr/lib/systemd/system/net-rebooter.timer
 
 
 systemctl daemon-reload

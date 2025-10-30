@@ -1,5 +1,5 @@
 
-/etc/systemd/system/reboot.timer
+/usr/lib/systemd/system/reboot.timer
 ```
 [Unit]
 Description=Reboot daily
@@ -13,7 +13,9 @@ OnCalendar=*-*-* 19:00:10
 WantedBy=timers.target
 ```
 
-/etc/systemd/system/reboot.service
+FIXME on bcedge-dignam these are accidentally in /etc/systemd/system/
+
+/usr/lib/systemd/system/reboot.service
 ```
 [Unit]
 Description=Reboot
