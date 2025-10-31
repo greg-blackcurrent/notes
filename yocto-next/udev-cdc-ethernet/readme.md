@@ -46,12 +46,19 @@ AT$MYCONFIG?
 ```
 
 
-Set ECM
+Set ECM, and "public" IP address
 ```
 AT$MYCONFIG="usbnetmode",1
+AT+USBNETIP=1
 ```
 
 Ctrl-a Q
+
+TODO I think public IP means. Set the IP of the cdc_ether device to match that of the actual wwan device on the 
+telcos network.
+
+We could also set this to private. `AT+USBNETIP=1,25` this results in a IP of `192.168.25.100`. The 25 needs to be 
+chosen to avoid conflicts with the modbus network.
 
 
 GPIO reset
@@ -63,6 +70,8 @@ Postmortem: perhaps need a reboot on the end. And a nohup to keep it running.
 ```
 nohup gpioset -c 0 --toggle 0 22=1; sleep 0.3 ; gpioset -c 0 --toggle 0 22=0; reboot
 ```
+
+TODO systemctl reboot (instead?)
 
 
 Tab dies.

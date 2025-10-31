@@ -1,5 +1,8 @@
 
 ```
+# First remove /etc/hostname I made it a symlink in the yocto build. This doesn't work.
+rm /etc/hostname
+
 mkdir /data/system
 vi /data/system/hostname
 bcedge-dignam
