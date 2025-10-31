@@ -4,6 +4,15 @@
 SUBSYSTEM=="net", ACTION=="add", DRIVERS=="cdc_ether", KERNEL=="eth*", NAME="usbnet0"
 ```
 
+vi /etc/udev/rules.d/70-wiredeth0.rules
+
+```
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="imx-dwmac", NAME="wiredeth0"
+```
+
+Remember to rename eth0.network to 20-wiredeth0.network
+
+
 Also need a new network config:
 
 more /usr/lib/systemd/network/10-usbnet0.network
@@ -19,9 +28,6 @@ UseMTU=yes
 RouteMetric=10
 ClientIdentifier=mac
 ```
-
-
-
 
 
 
