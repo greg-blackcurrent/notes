@@ -1,10 +1,10 @@
 [Unit]
-Description=Run net-rebooter service every 5 minutes
+Description=Run net-rebooter service every 2 minutes
 
 [Timer]
-# Wait for 15 minutes after booting so we don't reboot too often if connectivity is lost.
+# Wait for 30 minutes after booting so we don't reboot too often if connectivity is lost.
 # We may want to do something fancier here in the future. Perhaps implement backoff.
-OnBootSec=15min
+OnBootSec=30min
 OnUnitActiveSec=2m
 
 [Install]
