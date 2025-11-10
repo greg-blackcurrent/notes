@@ -23,6 +23,7 @@ Description=Reboot
 [Service]
 Type=oneshot
 ExecStart=/sbin/shutdown -r now
+ExecStart=/bin/systemctl reboot --message="periodic-rebooter: rebooting..."
 ```
 
 TODO use /bin/systemctl something to reboot instead?
